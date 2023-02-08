@@ -15,7 +15,7 @@ const Navbar = () => {
       <button className="hover:scale-105">
         <Link
           href="https://frontend-olyn.vercel.app"
-          className="cursor-pointer bg-white text-black p-4 hover:scale-125 "
+          className="cursor-pointer bg-white text-black p-4 "
         >
           Get Cronos &gt;
         </Link>
