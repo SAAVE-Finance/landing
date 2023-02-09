@@ -1,15 +1,11 @@
 import React from "react";
-<<<<<<< HEAD
 import Image, { StaticImageData } from "next/image";
 const Card = (props: {
   img: StaticImageData;
   title: string;
   description: string;
 }) => {
-=======
-import Image from "next/image";
 const Card = (props: { img: StaticImageData; title: string; description: string }) => {
->>>>>>> 799d03fa95d00b5f000f26aaadd6c7bc4d9db300
   return (
     <div className="h-96 w-96 rounded-2xl bg-gray-900 m-10 p-6 cursor-pointer shadow-2xl  hover:shadow-slate-700">
       <Image src={props.img} alt="hero" width={200} />
