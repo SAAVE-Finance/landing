@@ -15,8 +15,6 @@ export default function Home() {
       </Head>
       <main>
         <Hero />
-
-        <h2 className="text-white text-5xl">HII</h2>
         <Section1 />
         <Footer />
       </main>
