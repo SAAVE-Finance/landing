@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-const card = (props) => {
+const Card = (props) => {
   return (
     <div className="h-96 w-96 rounded-2xl bg-gray-900 m-10 p-6 cursor-pointer shadow-2xl  hover:shadow-slate-700">
       <Image src={props.img} alt="hero" width={200} />
@@ -14,4 +14,4 @@ const card = (props) => {
   );
 };
 
-export default card;
+export default Card;
