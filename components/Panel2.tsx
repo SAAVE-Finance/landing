@@ -4,6 +4,7 @@ import Image, { StaticImageData } from "next/image";
 const Panel = (props: {
   desc: string;
   img: StaticImageData;
+  glowimg : StaticImageData;
   title: string;
   link: string;
 }) => {
@@ -14,7 +15,8 @@ const Panel = (props: {
   return (
     <div className="flex justify-center w-[90vw] mx-auto ">
       <div className="basis-[50%]">
-        <Image src={props.img} alt="hero" />
+      <Image src={props.glowimg} alt="glow" className ="z-[-1] absolute left-[2px] top-[106rem]"/>
+      <Image src={props.img} alt="hero" />
       </div>
       <div className="flex flex-col basis-[35%] justify-center  mx-auto">
         <h1 className="text-white font-DM Sans font-bold text-6xl my-5">
