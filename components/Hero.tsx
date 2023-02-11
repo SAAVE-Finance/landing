@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "@/styles/Hero.module.css";
 import Image from "next/image";
-import Shape1 from "@/public/assets/Icosahedron (1).png";
+import Shape1 from "@/public/assets/chart.png";
 const Hero = () => {
   return (
     <>
