@@ -12,7 +12,7 @@ const Hero = () => {
         <h1
           className={`text-8xl text-white mx-auto font-extrabold font-[Inter] ${styles.heading}`}
         >
-          The Internent of
+          The Internet of
         </h1>
         <h1
           className={`text-8xl text-white mx-auto font-extrabold font-[Inter] ${styles.heading}`}
