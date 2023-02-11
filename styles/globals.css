@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -16,34 +16,13 @@ html {
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
+  font-family: "Manrope", sans-serif;
 }
 body {
   overflow-x: hidden;
   background: #050505;
   font-family: "Inter", sans-serif;
 }
-a {
-  text-decoration: none;
-  position: relative;
-}
 nav {
   font-family: "DM Sans", sans-serif;
-}
-a::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  border-radius: 0px;
-  background-color: #fff;
-  bottom: 0;
-  left: 0;
-  transform-origin: right;
-  transform: scaleX(0);
-  transition: transform 0.3s ease-in-out;
-}
-
-a:hover::before {
-  transform-origin: left;
-  transform: scaleX(1);
 }
