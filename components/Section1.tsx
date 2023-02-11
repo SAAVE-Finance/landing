@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Shape1 from "@/public/assets/Group 39241.png";
-import Sec1 from "@/public/assets/Sec1.png";
+import aaveLend from "@/public/assets/aaveLend.png";
 
 const Section1 = () => {
   return (
@@ -39,8 +38,8 @@ const Section1 = () => {
           </div>
         </div>
         <div className="flex items-center justify-center  mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
-          <div className="object-contain h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128 mt-[-35%]">
-            <Image src={Shape1} alt="Shape" />
+          <div className="object-contain sm:h-80 lg:h-96 xl:h-112 2xl:h-128 mt-[-35%] w-[657.98px] h-[651px]">
+            <Image src={aaveLend} alt="Shape" />
           </div>
         </div>
       </div>
