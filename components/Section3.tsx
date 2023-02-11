@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Shape1 from "@/public/assets/Sec3.png";
+import swordshield from "@/public/assets/swordshield.png";
 
 const Section3 = () => {
   return (
@@ -38,8 +38,8 @@ const Section3 = () => {
           </div>
         </div>
         <div className="flex items-center justify-center  mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
-          <div className="object-contain h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128 mt-[-35%]">
-            <Image src={Shape1} alt="Shape" />
+          <div className="object-contain h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128 mt-[-35%] w-[657.98px]">
+            <Image src={swordshield} alt="Shape" />
           </div>
         </div>
       </div>

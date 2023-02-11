@@ -1,14 +1,14 @@
 import React from "react";
 import Image from "next/image";
-import Shape1 from "@/public/assets/Sec2.png";
+import SAAVE from "@/public/assets/SAAVE.png";
 
 const Section2 = () => {
   return (
     <section>
       <div className="container flex flex-col justify-center mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
         <div className="flex items-center justify-center  mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
-          <div className="object-contain h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128 mt-[-35%]">
-            <Image src={Shape1} alt="Shape" />
+          <div className="object-contain sm:h-80 lg:h-96 xl:h-112 2xl:h-128 mt-[-35%] w-[657.98px] h-72">
+            <Image src={SAAVE} alt="Shape" />
           </div>
         </div>
         <div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
