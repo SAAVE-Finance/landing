@@ -15,6 +15,7 @@ const Card = (props: {
         {props.description}
       </p>
     </div>
+    
   );
 };
 
