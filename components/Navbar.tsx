@@ -6,9 +6,9 @@ import Image from "next/image";
 const Navbar = () => {
   return (
     <nav className="w-full flex  text-white font-['DM Sans'] justify-between my-5 py-8 px-20">
-      <div className=" text-xl flex">
+      <div className="flex">
         <Image src={Logo} alt={"nav-logo"} className=" w-14" />
-        <h2 className="text-xl font-bold my-3 mx-1">SAAVE</h2>
+        {/* <h2 className="text-xl font-bold my-3 mx-1">SAAVE</h2> */}
       </div>
       <div className="flex justify-around my-3 ">
         <a className={` ${styles.links} cursor-pointer mx-10`}>Learn</a>

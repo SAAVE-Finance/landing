@@ -9,6 +9,7 @@ import Panel2 from "@/components/Panel2";
 import Ghost2 from "@/public/assets/SAAVE.png";
 import SwordShield from "@/public/assets/swordshield.png";
 import Ghost1 from "@/public/assets/aaveLend.png";
+import Newsletter from "@/components/Newsletter";
 
 const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
@@ -47,7 +48,7 @@ export default function Home() {
           }
           link={"https://www.google.com"}
         />
-
+        <Newsletter />
         <Footer />
       </main>
     </>
