@@ -1,13 +1,16 @@
 import React from "react";
 import Image from "next/image";
-import Shape1 from "@/public/assets/Group 39241.png";
-import Sec1 from "@/public/assets/Sec1.png";
+import Shape1 from "@/public/assets/Sec2.png";
 
-const Section1 = () => {
+const Section2 = () => {
   return (
     <section>
       <div className="container flex flex-col justify-center mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
-        
+        <div className="flex items-center justify-center  mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
+          <div className="object-contain h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128 mt-[-35%]">
+            <Image src={Shape1} alt="Shape" />
+          </div>
+        </div>
         <div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
           <h1 className="text-5xl font-bold leading-none sm:text-6xl text-transparent bg-clip-text bg-gradient-to-r from-white to-[rgba(255,255,255,0.45)]">
             Secured By
@@ -38,14 +41,9 @@ const Section1 = () => {
             </a>
           </div>
         </div>
-        <div className="flex items-center justify-center  mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
-          <div className="object-contain h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128 mt-[-35%]">
-            <Image src={Shape1} alt="Shape" />
-          </div>
-        </div>
       </div>
     </section>
   );
 };
 
-export default Section1;
+export default Section2;

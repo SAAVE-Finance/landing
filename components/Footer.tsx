@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <footer aria-label="Site Footer" >
-      <div className="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
+      <div className="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8 mt-8">
         <div className="lg:flex lg:items-start lg:gap-8">
           <div className="grid grid-cols-2 gap-32 mt-8 lg:mt-0 lg:grid-cols-5 lg:gap-y-16">
             <div className="col-span-2 sm:col-span-1">

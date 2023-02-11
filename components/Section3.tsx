@@ -1,9 +1,8 @@
 import React from "react";
 import Image from "next/image";
-import Shape1 from "@/public/assets/Group 39241.png";
-import Sec1 from "@/public/assets/Sec1.png";
+import Shape1 from "@/public/assets/Sec3.png";
 
-const Section1 = () => {
+const Section3 = () => {
   return (
     <section>
       <div className="container flex flex-col justify-center mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
@@ -48,4 +47,4 @@ const Section1 = () => {
   );
 };
 
-export default Section1;
+export default Section3;
