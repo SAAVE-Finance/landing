@@ -4,6 +4,7 @@ import Hero from "@/components/Hero";
 import Footer from "@/components/Footer";
 import Section1 from "@/components/Section1";
 import Feature from "@/components/Feature";
+import Newsletter from "@/components/Newsletter";
 const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <Hero />
         <Feature />
         <Section1 />
+        <Newsletter />
         <Footer />
       </main>
     </>

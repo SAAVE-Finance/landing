@@ -2,32 +2,33 @@ import React from "react";
 import styles from "@/styles/Hero.module.css";
 import Image from "next/image";
 import Shape1 from "@/public/assets/Icosahedron (1).png";
+import Coins from "@/public/assets/coins.png";
+import Ghost from "@/public/assets/ghost.png";
+import Wallet from "@/public/assets/wallet.png";
 const Hero = () => {
   return (
     <>
-      <main className="relative flex flex-col  text-white w-[85vw] mx-auto my-16 z-50 ">
-        <h2 className={`${styles.heading} text-[#ffffff99] my-10 mx-auto`}>
-          WELCOME TO CRONOS
-        </h2>
-        <h1 className="text-8xl  text-transparent bg-clip-text bg-gradient-to-r from-white to-[rgba(255,255,255,0.45)] mx-auto">
-          The Internent of
-        </h1>
-        <h1 className="text-8xl  text-transparent bg-clip-text bg-gradient-to-r from-white to-[rgba(255,255,255,0.45)] mx-auto">
-          Blockchain
-        </h1>
-        <p
-          className={`${styles.heading} my-10  mx-auto w-[70%] text-[#ffffffaf] text-center`}
-        >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-          incidunt quas totam sapiente voluptatem natus cupiditate
-        </p>
+      <main className="w-full h-screen flex p-10 items-center justify-center md:mx-10 ">
+        <div className="w-full lg:w-[40vw]">
+          <h1 className="text-6xl md:text-[64px] leading-tight font-bold text-transparent bg-clip-text bg-gradient-to-r from-white to-[rgba(255,255,255,0.45)]">SAAVE: A Trading Ecosystem Built for the Decentralized World</h1>
+          <p className="text-gray-500 mt-10">A highly-curated platform for creating, collecting and trading unique NFTs. Trade with confidence on the world’s fastest and most secure crypto exchange</p>
+        </div>
+
+        <div className="w-full hidden lg:block md:w-[40vw]">
+          <Image
+            className=" h-[600px] w-auto cursor-pointer"
+            // src={Ghost.src}
+            src={Coins.src}
+            // src={Wallet.src}
+            alt="Your Company"
+            width={400}
+            height={400}
+          />
+        </div>
+
+
       </main>
-      <div className="absolute z-1 h-10 top-48 left-36">
-        <Image src={Shape1} alt="hero" width={200} />
-      </div>
-      <div className="absolute z-1 h-10 bottom-52 -right-20">
-        <Image src={Shape1} alt="hero" />
-      </div>
+
     </>
   );
 };

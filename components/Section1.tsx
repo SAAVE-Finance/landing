@@ -1,46 +1,88 @@
 import React from "react";
 import Image from "next/image";
 import Shape1 from "@/public/assets/Group 8683.png";
+import Award from "@/public/assets/award.png";
+import Ghost2 from "@/public/assets/ghost2.png";
+import Ghost3 from "@/public/assets/ghost3.png";
 
 const Navbar = () => {
   return (
-    <section>
-      <div className="container flex flex-col justify-center mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
-        <div className="flex items-center justify-center  mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
-          <div className="object-contain h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128 mt-[-35%]">
-            <Image src={Shape1} alt="Shape" />
+    <section className="mt-48">
+      <h1 className="font-extrabold text-6xl text-center leading-[64px] text-transparent bg-clip-text bg-gradient-to-r from-white to-[rgba(255,255,255,0.45)] mx-auto">
+        What is SAAVE?
+      </h1>
+      <div className="mx-24 flex-col flex items-center justify-center">
+
+        <div className="w-[70vw] flex-col lg:flex-row flex items-center justify-evenly flex-wrap">
+          <div className="space-y-6 w-1/2">
+            <h1 className="text-white text-3xl font-bold">Decentralized lending</h1>
+            <p className="text-white text-xl ">
+              Saave provides a beginner-friendly investment platform with a simple interface for tracking investments and accessing funds. It offers a convenient way for new investors to earn higher returns through a portfolio of high-yield accounts, funds, and CDs.
+            </p>
+            <button className='py-2 bg-white hidden sm:block rounded-full w-48 text-base font-medium px-2'>Connect Wallet</button>
+          </div>
+
+          <div className="space-y-10 w-1/2">
+            <Image
+              className=" h-[600px] w-[600px] cursor-pointer"
+              // src={Ghost.src}
+              src={Ghost2.src}
+              // src={Wallet.src}
+              alt="Your Company"
+              width={400}
+              height={400}
+            />
           </div>
         </div>
-        <div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
-          <h1 className="text-5xl font-bold leading-none sm:text-6xl text-transparent bg-clip-text bg-gradient-to-r from-white to-[rgba(255,255,255,0.45)]">
-            Secured By
-            <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-[rgba(255,255,255,0.45)]">
-              the Hedron
-            </span>
-            <br />
-          </h1>
-          <p className="text-[20px] text-white mt-2 font-extralight leading-[32.97px]">
-            In return for securing the services on the Cronos Hub, transaction
-            fees and staking rewards are distributed to HEDRON stakers.
-          </p>
-          <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start mt-5">
-            <a
-              rel="noopener noreferrer"
-              href="#"
-              className="px-8 py-3 text-lg font-light rounded bg-gradient-to-r from-white to-[rgba(255,255,255,0.45)]"
-            >
-              Start Staking
-            </a>
-            <a
-              rel="noopener noreferrer"
-              href="#"
-              className="px-8 py-3 text-lg font-extralight text-white"
-            >
-              Learn More &gt;
-            </a>
+
+
+        <div className="w-[70vw]  flex items-center justify-evenly flex-wrap">
+          <div className="space-y-10 w-1/2 text-left">
+            <Image
+              className=" h-[530px] w-[530px] cursor-pointer"
+              // src={Ghost.src}
+              src={Ghost3.src}
+              // src={Wallet.src}
+              alt="Your Company"
+              width={400}
+              height={400}
+            />
+          </div>
+          <div className="space-y-6 w-1/2 ">
+            <h1 className="text-white text-3xl font-bold text-right">Decentralized lending</h1>
+            <p className="text-white text-xl text-right ">
+              Saave provides a beginner-friendly investment platform with a simple interface for tracking investments and accessing funds. It offers a convenient way for new investors to earn higher returns through a portfolio of high-yield accounts, funds, and CDs.
+            </p>
+            <div className="justify-end flex ">
+            <button className='py-2 bg-white hidden sm:block rounded-full w-48 text-base font-medium px-2'>Connect Wallet</button>
+            </div>
           </div>
         </div>
+
+
+        <div className="w-[70vw]  flex items-center justify-evenly flex-wrap">
+          <div className="space-y-6 w-1/2">
+            <h1 className="text-white text-3xl font-bold">Decentralized lending</h1>
+            <p className="text-white text-xl ">
+              Saave provides a beginner-friendly investment platform with a simple interface for tracking investments and accessing funds. It offers a convenient way for new investors to earn higher returns through a portfolio of high-yield accounts, funds, and CDs.
+            </p>
+            <button className='py-2 bg-white hidden sm:block rounded-full w-48 text-base font-medium px-2'>Connect Wallet</button>
+          </div>
+
+          <div className="space-y-10 w-1/2">
+            <Image
+              className=" h-[530px] w-[530px] cursor-pointer"
+              // src={Ghost.src}
+              src={Award.src}
+              // src={Wallet.src}
+              alt="Your Company"
+              width={400}
+              height={400}
+            />
+          </div>
+        </div>
+
+
       </div>
     </section>
   );

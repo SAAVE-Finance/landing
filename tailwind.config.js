@@ -9,6 +9,7 @@ module.exports = {
     extend: {},
     fontFamily: {
       'DM_Sans': ['DM Sans'],
+      'Manrope': ['Manrope'],
     }
   },
   plugins: [],
