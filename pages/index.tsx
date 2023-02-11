@@ -7,6 +7,7 @@ import Tech from "@/components/Tech";
 import Panel from "@/components/Panel";
 import Panel2 from "@/components/Panel2";
 import Ghost2 from "@/public/assets/SAAVE.png";
+import Newsletter from "@/components/Newsletter";
 import SwordShield from "@/public/assets/swordshield.png";
 import Ghost1 from "@/public/assets/aaveLend.png";
 
@@ -47,7 +48,7 @@ export default function Home() {
           }
           link={"https://www.google.com"}
         />
-
+        <Newsletter />
         <Footer />
       </main>
     </>
