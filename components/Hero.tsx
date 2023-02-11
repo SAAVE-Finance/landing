@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "@/styles/Hero.module.css";
 import Image from "next/image";
-import Shape1 from "@/public/assets/chart.png";
+import Shape1 from "@/public/assets/ecto.png";
 const Hero = () => {
   return (
     <>
@@ -9,7 +9,7 @@ const Hero = () => {
         <h2 className={`${styles.heading} text-[#ffffff99] my-10 mx-auto`}>
           WELCOME TO CRONOS
         </h2>
-        <h1 className="text-8xl  text-transparent bg-clip-text bg-gradient-to-r from-white to-[rgba(255,255,255,0.45)] mx-auto">
+        <h1 className="text-8xl  text-transparent bg-clip-text bg-gradient-to-r from-white to-[rgba(255,255,255,0.45)] mx-auto font-extrabold font-Inter">
           The Internent of
         </h1>
         <h1 className="text-8xl  text-transparent bg-clip-text bg-gradient-to-r from-white to-[rgba(255,255,255,0.45)] mx-auto">
