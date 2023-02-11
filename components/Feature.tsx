@@ -1,10 +1,7 @@
-import Link from "next/link";
 import React from "react";
 import Coin from "@/public/assets/image 5.png";
 import Sheild from "@/public/assets/image 6.png";
-import Chart from "@/public/assets/chart.png";
 import Card from "@/components/Card";
-import Badge from "@/public/assets/image 3.png";
 
 const Feature = () => {
   return (

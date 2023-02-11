@@ -2,7 +2,6 @@ import Head from "next/head";
 import { Inter } from "@next/font/google";
 import Hero from "@/components/Hero";
 import Footer from "@/components/Footer";
-import Section2 from "@/components/Section2";
 import Feature from "@/components/Feature";
 import Tech from "@/components/Tech";
 import Panel from "@/components/Panel";
