@@ -22,10 +22,10 @@ const data = [
 const Feature = () => {
   return (
     <div className="mt-48 ">
-      <h1 className="font-extrabold text-6xl text-center leading-[64px] text-transparent bg-clip-text bg-gradient-to-r from-white to-[rgba(255,255,255,0.45)] mx-auto">
+      <h1 className="font-extrabold text-5xl md:text-6xl text-center leading-[64px] text-transparent bg-clip-text bg-gradient-to-r from-white to-[rgba(255,255,255,0.45)] mx-auto">
         What is SAAVE?
       </h1>
-      <div className="flex items-center justify-evenly flex-wrap p-16">
+      <div className="flex items-center justify-evenly flex-wrap md:p-16">
         <Card heading={data[0].heading} img={Yield} desc={data[0].desc} />
         <Card heading={data[0].heading} img={Sheild} desc={data[0].desc} />
       </div>
