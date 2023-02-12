@@ -29,7 +29,7 @@ export default function Home() {
         <Feature />
         <Panel
           img={Ghost1}
-          glowimg={Glow1}
+          glowimg={"glow-1"}
           title={"Decentralized lending"}
           desc={
             "In return for securing the services on the Cronos Hub, transaction fees and staking rewards are distributed to HEDRON stakers."
@@ -47,7 +47,7 @@ export default function Home() {
         />
         <Panel
           img={SwordShield}
-          glowimg={Glow3}
+          glowimg={"glow-3"}
           title={"Decentralized lending"}
           desc={
             "In return for securing the services on the Cronos Hub, transaction fees and staking rewards are distributed to HEDRON stakers. In the Cronos Hub, transaction fees and staking rewards are distributed to HEDRON stakers."
