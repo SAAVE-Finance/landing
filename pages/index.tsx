@@ -10,9 +10,7 @@ import Ghost2 from "@/public/assets/SAAVE.png";
 import SwordShield from "@/public/assets/swordshield.png";
 import Ghost1 from "@/public/assets/aaveLend.png";
 import Newsletter from "@/components/Newsletter";
-import Glow1 from "@/public/assets/glow1.png";
 import Glow2 from "@/public/assets/glow2.png";
-import Glow3 from "@/public/assets/glow3.png";
 
 const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
