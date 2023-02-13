@@ -2,8 +2,16 @@ import Head from "next/head";
 import { Inter } from "@next/font/google";
 import Hero from "@/components/Hero";
 import Footer from "@/components/Footer";
-import Section1 from "@/components/Section1";
 import Feature from "@/components/Feature";
+import Tech from "@/components/Tech";
+import Panel from "@/components/Panel";
+import Panel2 from "@/components/Panel2";
+import Ghost2 from "@/public/assets/SAAVE.png";
+import SwordShield from "@/public/assets/swordshield.png";
+import Ghost1 from "@/public/assets/aaveLend.png";
+import Newsletter from "@/components/Newsletter";
+import Glow2 from "@/public/assets/glow2.png";
+
 const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
@@ -17,7 +25,34 @@ export default function Home() {
       <main>
         <Hero />
         <Feature />
-        <Section1 />
+        <Panel
+          img={Ghost1}
+          glowimg={"glow-1"}
+          title={"Decentralized lending"}
+          desc={
+            "In return for securing the services on the Cronos Hub, transaction fees and staking rewards are distributed to HEDRON stakers."
+          }
+          link={"https://www.google.com"}
+        />
+        <Panel2
+          img={Ghost2}
+          glowimg={Glow2}
+          title={"Decentralized lending"}
+          desc={
+            "In return for securing the services on the Cronos Hub, transaction fees and staking rewards are distributed to HEDRON stakers."
+          }
+          link={"https://www.google.com"}
+        />
+        <Panel
+          img={SwordShield}
+          glowimg={"glow-3"}
+          title={"Decentralized lending"}
+          desc={
+            "In return for securing the services on the Cronos Hub, transaction fees and staking rewards are distributed to HEDRON stakers. In the Cronos Hub, transaction fees and staking rewards are distributed to HEDRON stakers."
+          }
+          link={"https://www.google.com"}
+        />
+        <Newsletter />
         <Footer />
       </main>
     </>

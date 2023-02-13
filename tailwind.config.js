@@ -8,8 +8,12 @@ module.exports = {
   theme: {
     extend: {},
     fontFamily: {
-      'DM_Sans': ['DM Sans'],
-    }
+      DM_Sans: ["DM Sans"],
+    },
+    backgroundImage: {
+      "glow-1": "url('/assets/glow1.png')",
+      "glow-3": "url('/assets/glow3.png')",
+    },
   },
   plugins: [],
 };
