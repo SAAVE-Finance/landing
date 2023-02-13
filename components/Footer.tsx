@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer aria-label="Site Footer" className="bg-black text-gray-100">
       <div
-        className="max-w-screen-xl px-4 pt-16 pb-7 mx-auto space-y-8 sm:px-6 lg:space-y-16 lg:px-8"
+        className="max-w-screen-xl px-4 pt-16 pb-7 mx-auto space-y-8 sm:px-6 lg:space-y-16 lg:px-8 mb-0"
       >
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           <div>

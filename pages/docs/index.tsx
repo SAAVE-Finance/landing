@@ -2,9 +2,12 @@ import React from 'react'
 import Image from "next/image";
 import Hand from "@/public/assets/hand.png";
 import Locker from "@/public/assets/locker.png";
+import Navbar1 from "@/components/Navbar1";
 
 function docs() {
     return (
+        <>
+        <Navbar1 />
         <div className='flex flex-col space-y-48 items-center justify-center mt-10 md:mt-24 p-4'>
             <div className='text-center space-y-4'>
                 <h1 className='text-4xl font-Manrope md:text-6xl font-extrabold text-white'>How to Deposit into SAAVE. - 1</h1>
@@ -24,8 +27,7 @@ function docs() {
                             // src={Wallet.src}
                             alt="Your Company"
                             width={900}
-                            height={900}
-                        />
+                            height={900} />
                     </div>
                 </div>
             </div>
@@ -42,8 +44,7 @@ function docs() {
                             // src={Wallet.src}
                             alt="Your Company"
                             width={900}
-                            height={900}
-                        />
+                            height={900} />
                     </div>
                     <p className='text-white text-left md:text-right w-full md:w-1/2 lg:w-1/3 text-xl p-4'>
                         ZoidPay is fast becoming one of the most sought after projects
@@ -74,8 +75,7 @@ function docs() {
                             // src={Wallet.src}
                             alt="Your Company"
                             width={900}
-                            height={900}
-                        />
+                            height={900} />
                     </div>
                 </div>
             </div>
@@ -92,8 +92,7 @@ function docs() {
                             // src={Wallet.src}
                             alt="Your Company"
                             width={900}
-                            height={900}
-                        />
+                            height={900} />
                     </div>
                     <p className='text-white text-left w-full md:w-1/2 lg:w-1/3 text-xl p-4'>
                         ZoidPay is fast becoming one of the most sought after projects
@@ -105,7 +104,7 @@ function docs() {
                 </div>
             </div>
 
-        </div>
+        </div></>
     )
 }
 
