@@ -3,8 +3,8 @@ import Image, { StaticImageData } from "next/image";
 
 const Panel = (props: {
   desc: string;
-  img: StaticImageData;
-  glowimg: StaticImageData;
+  img: string;
+  glowimg: string;
   title: string;
   link: string;
 }) => {
