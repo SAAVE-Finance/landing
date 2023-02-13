@@ -3,6 +3,8 @@ import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import Saave from "@/public/assets/saave.png";
 import Image from 'next/image'
+import { useRouter } from 'next/router'
+
 
 const navigation = [
   { name: 'Dashboard', href: '#', current: true },
@@ -17,11 +19,12 @@ function classNames(...classes: string[]) {
 }
 
 export default function Example() {
+  const router = useRouter();
   return (
     <Disclosure as="nav" className="bg-black">
       {({ open }) => (
         <>
-          <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 font-Manrope">
+          <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 font-Manrope py-2">
             <div className="relative flex h-16 items-center justify-between">
               <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
@@ -42,6 +45,7 @@ export default function Example() {
                     alt="Your Company"
                     width={200}
                     height={100}
+                    onClick={()=> router.push("/")}
                   />
                   <Image
                     className="hidden h-12 w-auto lg:block cursor-pointer"

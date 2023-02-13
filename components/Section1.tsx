@@ -8,7 +8,7 @@ import Ghost3 from "@/public/assets/ghost3.png";
 const Navbar = () => {
   return (
     <section className="mt-48">
-      <h1 className="font-extrabold text-5xl md:text-6xl text-center leading-[64px] text-transparent bg-clip-text bg-gradient-to-r from-white to-[rgba(255,255,255,0.45)] mx-auto">
+      <h1 className="font-extrabold text-4xl md:text-6xl text-center leading-[64px] text-transparent bg-clip-text bg-gradient-to-r from-white to-[rgba(255,255,255,0.45)] mx-auto">
         How SAAVE Works?
       </h1>
 

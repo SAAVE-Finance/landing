@@ -21,8 +21,8 @@ const data = [
 
 const Feature = () => {
   return (
-    <div className="mt-48 ">
-      <h1 className="font-extrabold text-5xl md:text-6xl text-center leading-[64px] text-transparent bg-clip-text bg-gradient-to-r from-white to-[rgba(255,255,255,0.45)] mx-auto">
+    <div className="mt-36 md:mt-48 ">
+      <h1 className="font-extrabold text-4xl md:text-6xl text-center leading-[64px] text-transparent bg-clip-text bg-gradient-to-r from-white to-[rgba(255,255,255,0.45)] mx-auto">
         What is SAAVE?
       </h1>
       <div className="flex items-center justify-evenly flex-wrap md:p-16">

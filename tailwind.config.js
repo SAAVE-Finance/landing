@@ -10,6 +10,7 @@ module.exports = {
     fontFamily: {
       'DM_Sans': ['DM Sans'],
       'Manrope': ['Manrope'],
+      'Inter': ['Inter'],
     }
   },
   plugins: [],

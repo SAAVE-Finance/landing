@@ -20,7 +20,6 @@ export default function Home() {
         <Feature />
         <Section1 />
         <Newsletter />
-        <Footer />
       </main>
     </>
   );
