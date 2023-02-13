@@ -1,5 +1,29 @@
 .heading {
-  font-family: "DM Sans", sans-serif;
+  animation: color-change 5s infinite;
+}
+
+@keyframes color-change {
+  0% {
+    color: rgb(80, 253, 247);
+  }
+  20% {
+    color: rgb(116, 237, 122);
+  }
+  40% {
+    color: rgb(255, 73, 206);
+  }
+  50% {
+    color: rgb(130, 130, 244);
+  }
+  60% {
+    color: rgb(255, 255, 255);
+  }
+  80% {
+    color: rgb(205, 255, 97);
+  }
+  100% {
+    color: rgb(236, 115, 115);
+  }
 }
 .heading {
   animation: color-change 5s infinite;

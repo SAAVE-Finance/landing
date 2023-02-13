@@ -1,4 +1,3 @@
-import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 import Sheild from "@/public/assets/image 6.png";
