@@ -4,6 +4,7 @@ import Hero from "@/components/Hero";
 import Footer from "@/components/Footer";
 import Feature from "@/components/Feature";
 import Newsletter from "@/components/Newsletter";
+import Section1 from "@/components/Section1";
 const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (

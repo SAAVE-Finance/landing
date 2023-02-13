@@ -53,6 +53,7 @@ export default function Example() {
                     alt="Your Company"
                     width={200}
                     height={100}
+                    onClick={()=> router.push("/")}
                   />
                 </div>
                 
