@@ -2,8 +2,9 @@ import React from 'react'
 import Image from "next/image";
 import Hand from "@/public/assets/hand.png";
 import Locker from "@/public/assets/locker.png";
-import Navbar1 from "@/components/Navbar1";
 import Footer from '@/components/Footer';
+import BuyNFT from "@/components/BuyNFT";
+import Navbar1 from '@/components/Navbar1';
 
 function docs() {
     return (
@@ -106,6 +107,7 @@ function docs() {
             </div>
 
         </div>
+        <BuyNFT />
         <Footer />
         </>
     )
