@@ -5,6 +5,7 @@ import Locker from "@/public/assets/locker.png";
 import Footer from '@/components/Footer';
 import BuyNFT from "@/components/BuyNFT";
 import Navbar1 from '@/components/Navbar1';
+import { CreateAndViewAsset } from '@/components/CreateAndViewAsset';
 
 function docs() {
     return (
@@ -106,6 +107,9 @@ function docs() {
                 </div>
             </div>
 
+        </div>
+        <div className='flex justify-center w-[80%] h-[500px] mx-auto mb-3'>
+            <CreateAndViewAsset />
         </div>
         <BuyNFT />
         <Footer />
