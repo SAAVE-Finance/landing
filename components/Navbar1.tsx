@@ -19,13 +19,14 @@ const Navbar1 = () => {
     console.log("connected");
   };
   React.useEffect(() => {
-    provider.on("connect wallet", onConnect);
+    provider.on("connect", onConnect);
     return () => {
-      provider.removeListener("connect wallet", onConnect);
+      provider.removeListener("connect", onConnect);
     };
   }, [provider]);
 
   return (
+    <>
     <nav className="w-full flex  text-white font-['DM Sans'] justify-between my-5 py-8 px-20">
       <div className="flex">
         <Image src={Logo} alt={"nav-logo"} className=" w-14" />
@@ -36,10 +37,14 @@ const Navbar1 = () => {
         <a className={` ${styles.links} cursor-pointer mx-10`}>Build</a>
         <a className={` ${styles.links} cursor-pointer mx-10`}>Explore</a>
       </div>
-      <button className="hover:scale-105 bg-white rounded-md border-none text-black px-1" onClick={onConnectClick}>
+      {!loading && !isLoggedIn && (
+        <button className="bg-[#ffffff]  text-[#212121] font-medium text-xl rounded-2xl px-5 py-1  hover:scale-105" onClick={onConnectClick}>
           Connect Wallet
-      </button>
+        </button>
+      )}
+      {!loading && isLoggedIn}
     </nav>
+    </>
   );
 };
 

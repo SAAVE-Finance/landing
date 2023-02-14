@@ -11,6 +11,7 @@ import SwordShield from "@/public/assets/swordshield.png";
 import Ghost1 from "@/public/assets/aaveLend.png";
 import Newsletter from "@/components/Newsletter";
 import Glow2 from "@/public/assets/glow2.png";
+import Navbar from "@/components/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
@@ -23,6 +24,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
+        <Navbar />
         <Hero />
         <Feature />
         <Panel
