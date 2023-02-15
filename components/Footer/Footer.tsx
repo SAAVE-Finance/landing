@@ -241,10 +241,9 @@ const Footer = () => {
                 </ul>
               </nav>
             </div>
+            <p className="text-xs text-gray-400">Made with ❤️ by SAAVE Team</p>
           </div>
         </div>
-
-        <p className="text-xs text-gray-400">Made with ❤️ by SAAVE Team</p>
       </div>
     </footer>
   );
