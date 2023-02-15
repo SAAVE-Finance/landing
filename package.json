@@ -10,12 +10,7 @@
   },
   "dependencies": {
     "@arcana/auth": "^1.0.1",
-    "@emotion/react": "^11.10.5",
-    "@emotion/server": "^11.10.0",
     "@livepeer/react": "^2.2.0",
-    "@mantine/core": "^5.10.4",
-    "@mantine/hooks": "^5.10.4",
-    "@mantine/next": "^5.10.4",
     "@next/font": "13.1.6",
     "@types/node": "18.13.0",
     "@types/react": "18.0.27",

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import styles from "../styles/Navbar.module.css";
+import styles from "../../styles/Navbar.module.css";
 import Logo from "/public/assets/saave.png";
 import Image from "next/image";
 
