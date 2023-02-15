@@ -9,7 +9,7 @@
   height: 2px;
   border-radius: 0px;
   background-color: #cdcccc;
-  bottom: 9px;
+  bottom: -1px;
   left: 0;
   transform-origin: right;
   transform: scaleX(0);

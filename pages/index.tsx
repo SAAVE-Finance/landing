@@ -3,10 +3,9 @@ import { Inter } from "@next/font/google";
 import Hero from "@/components/Hero";
 import Footer from "@/components/Footer";
 import Feature from "@/components/Feature";
-import Tech from "@/components/Tech";
 import Panel from "@/components/Panel";
 import Panel2 from "@/components/Panel2";
-import Ghost2 from "@/public/assets/SAAVE.png";
+import Ghost2 from "@/public/assets/ghostmascot.png";
 import SwordShield from "@/public/assets/swordshield.png";
 import Ghost1 from "@/public/assets/aaveLend.png";
 import Newsletter from "@/components/Newsletter";
@@ -37,7 +36,7 @@ export default function Home() {
           link={"https://www.google.com"}
         />
         <Panel2
-          img={Ghost2}
+          img={SwordShield}
           glowimg={Glow2}
           title={"Decentralized lending"}
           desc={
@@ -46,7 +45,7 @@ export default function Home() {
           link={"https://www.google.com"}
         />
         <Panel
-          img={SwordShield}
+          img={Ghost2}
           glowimg={"glow-3"}
           title={"Decentralized lending"}
           desc={
