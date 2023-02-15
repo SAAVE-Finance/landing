@@ -9,7 +9,7 @@ const Feature = () => {
       <h1 className="font-normal text-6xl text-center leading-[64px] font-[inter] text-white my-5 ">
         What does SAAVE do?
       </h1>
-      <div className="flex flex-row justify-center px-10 my-24">
+      <div className="flex flex-row justify-center px-10 mt-20 mb-12">
         <Card
           img={Sheild}
           title={"Security provider"}

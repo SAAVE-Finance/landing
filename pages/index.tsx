@@ -5,7 +5,7 @@ import Footer from "@/components/Footer/Footer";
 import Feature from "@/components/Feature";
 import Panel from "@/components/Panel";
 import Panel2 from "@/components/Panel2";
-import Ghost2 from "@/public/assets/ghostmascot.png";
+import Ghost2 from "@/public/assets/SAAVE.png";
 import SwordShield from "@/public/assets/swordshield.png";
 import Ghost1 from "@/public/assets/aaveLend.png";
 import Newsletter from "@/components/Cards/Newsletter";
@@ -28,30 +28,30 @@ export default function Home() {
         <Feature />
         <Panel
           img={Ghost1}
-          glowimg={"glow-1"}
-          title={"Decentralized lending"}
+          glowimg={"-glow-1"}
+          title={"AAVE lending"}
           desc={
-            "In return for securing the services on the Cronos Hub, transaction fees and staking rewards are distributed to HEDRON stakers."
+            "In return for securing the services on the Cronos Hub, transaction fees and staking rewards are distributed to HEDRON stakers. In the Cronos Hub, transaction fees and staking rewards are distributed to HEDRON stakers."
           }
-          link={"https://www.google.com"}
+          link={"/aave"}
         />
         <Panel2
-          img={SwordShield}
-          glowimg={Glow2}
-          title={"Decentralized lending"}
-          desc={
-            "In return for securing the services on the Cronos Hub, transaction fees and staking rewards are distributed to HEDRON stakers."
-          }
-          link={"https://www.google.com"}
-        />
-        <Panel
           img={Ghost2}
-          glowimg={"glow-3"}
+          glowimg={Glow2}
           title={"Decentralized lending"}
           desc={
             "In return for securing the services on the Cronos Hub, transaction fees and staking rewards are distributed to HEDRON stakers. In the Cronos Hub, transaction fees and staking rewards are distributed to HEDRON stakers."
           }
-          link={"https://www.google.com"}
+          link={"/curve"}
+        />
+        <Panel
+          img={SwordShield}
+          glowimg={"-glow-3"}
+          title={"Decentralized lending"}
+          desc={
+            "In return for securing the services on the Cronos Hub, transaction fees and staking rewards are distributed to HEDRON stakers. In the Cronos Hub, transaction fees and staking rewards are distributed to HEDRON stakers."
+          }
+          link={"/defi"}
         />
         <Newsletter />
         <Footer />

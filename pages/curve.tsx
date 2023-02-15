@@ -4,7 +4,7 @@ import Hand from "@/public/assets/hand.png";
 import Locker from "@/public/assets/locker.png";
 import Footer from "@/components/Footer/Footer";
 import BuyNFT from "@/components/BuyNFT";
-import Navbar1 from "@/components/Navbar1";
+import Navbar1 from "@/components/Navbar/Navbar1";
 
 function docs() {
   return (
