@@ -9,7 +9,9 @@ import Ghost2 from "@/public/assets/SAAVE.png";
 import SwordShield from "@/public/assets/swordshield.png";
 import Ghost1 from "@/public/assets/aaveLend.png";
 import Newsletter from "@/components/Cards/Newsletter";
+import Glow1 from "@/public/assets/glow1.png";
 import Glow2 from "@/public/assets/glow2.png";
+import Glow3 from "@/public/assets/glow3.png";
 import Navbar from "@/components/Navbar/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -28,7 +30,7 @@ export default function Home() {
         <Feature />
         <Panel
           img={Ghost1}
-          glowimg={"-glow-1"}
+          glowimg={Glow1}
           title={"AAVE lending"}
           desc={
             "In return for securing the services on the Cronos Hub, transaction fees and staking rewards are distributed to HEDRON stakers. In the Cronos Hub, transaction fees and staking rewards are distributed to HEDRON stakers."
@@ -46,7 +48,7 @@ export default function Home() {
         />
         <Panel
           img={SwordShield}
-          glowimg={"-glow-3"}
+          glowimg={Glow3}
           title={"Decentralized lending"}
           desc={
             "In return for securing the services on the Cronos Hub, transaction fees and staking rewards are distributed to HEDRON stakers. In the Cronos Hub, transaction fees and staking rewards are distributed to HEDRON stakers."

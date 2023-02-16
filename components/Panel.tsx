@@ -5,7 +5,7 @@ import Link from "next/link";
 const Panel = (props: {
   desc: string;
   img: StaticImageData;
-  glowimg: string;
+  glowimg: StaticImageData;
   title: string;
   link: string;
 }) => {
@@ -26,6 +26,11 @@ const Panel = (props: {
         className={`basis-[50%] bg${props.glowimg} bg-[length:600px_600px] bg-origin-content bg-no-repeat bg-[center_right_2rem]`}
       >
         {/* <Image src={props.glowimg} alt="glow" className="z-[-1] absolute" /> */}
+        <Image
+          src={props.glowimg}
+          alt="glow"
+          className="z-[-1] absolute right-[2px] opacity-75 bg-clip-content" 
+        />
         <Image src={props.img} alt="hero" />
       </div>
     </div>
