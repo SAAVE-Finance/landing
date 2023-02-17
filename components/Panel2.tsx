@@ -26,9 +26,11 @@ const Panel = (props: {
         <p className="text-[#ffffffae] font-light font-DM_Sans text-base my-9">
           {props.desc}
         </p>
+        <Link href={props.link}>
         <button className="bg-[#ffffff]  text-[#212121] font-medium text-xl mt-2 rounded-2xl px-10 py-2 w-[70%] hover:scale-105">
-          <Link href={props.link}>Learn More &gt;</Link>
+          Learn More &gt;
         </button>
+        </Link>
       </div>
     </div>
   );
