@@ -58,7 +58,8 @@ export const Video1 = () => {
       }}
       theme={{
         borderStyles: { containerBorderStyle: 'dashed' },
-        radii: { containerBorderRadius: '10px' },
+        radii: { containerBorderRadius: '20px' },
+
       }}
     />
   );
@@ -78,7 +79,7 @@ export const Video2 = () => {
       }}
       theme={{
         borderStyles: { containerBorderStyle: 'dashed' },
-        radii: { containerBorderRadius: '10px' },
+        radii: { containerBorderRadius: '20px' },
       }}
     />
   );
@@ -98,7 +99,7 @@ export const Video3 = () => {
       }}
       theme={{
         borderStyles: { containerBorderStyle: 'dashed' },
-        radii: { containerBorderRadius: '10px' },
+        radii: { containerBorderRadius: '20px' },
       }}
     />
   );

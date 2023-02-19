@@ -16,8 +16,8 @@ const signer = new ethers.Wallet(Pkey);
 // }
 // setUserAddress()
 
-const sendNotification = async ({userAddr}) => {
-    console.log("user",userAddr)
+const sendNotification = async () => {
+    // console.log("user",userAddr)
     userAddr = '0x3de8a470b8563785250E855676BEdd62478a0492'
     try {
         const apiResponse = await PushAPI.payloads.sendNotification({

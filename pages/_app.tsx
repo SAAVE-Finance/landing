@@ -16,7 +16,7 @@ import { configureChains, createClient, WagmiConfig } from "wagmi";
 import { publicProvider } from "wagmi/providers/public";
 import { RainbowKitProvider } from "@rainbow-me/rainbowkit";
 
-export const ArcanaRainbowConnector = ({ chains }) => {
+export const ArcanaRainbowConnector = ({ chains } : {chains: any}) => {
   return {
     id: "arcana-auth",
     name: "Arcana Wallet",
@@ -36,7 +36,7 @@ export const ArcanaRainbowConnector = ({ chains }) => {
     },
   };
 };
-const connectors = (chains) =>
+const connectors = ({ chains } : {chains: any}) =>
   connectorsForWallets([
     {
       groupName: "Recommended",
