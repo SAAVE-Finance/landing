@@ -6,7 +6,7 @@ function Hero2() {
   return (
     <div className='text-white h-auto p-4 md:p-10 flex '>
       <div className='w-full  md:mx-10 text-center '>
-        <h1 className=' text-6xl p-10 font-bold font-Poppins  bg-gradient-to-r from-purple-400 to-pink-600'>
+        <h1 className=' text-6xl p-10 font-bold font-Poppins bg-gradient-to-r from-purple-400 to-pink-600'>
 
           SAAVE <br /> Trusted and Secure <br />Crypto Lending Platform
         </h1>

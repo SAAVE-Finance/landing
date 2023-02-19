@@ -45,7 +45,7 @@ export default function Example() {
                     alt="Your Company"
                     width={200}
                     height={100}
-                    onClick={()=> router.push("/")}
+                    onClick={() => router.push("/")}
                   />
                   <Image
                     className="hidden h-12 w-auto lg:block cursor-pointer"
@@ -53,10 +53,10 @@ export default function Example() {
                     alt="Your Company"
                     width={200}
                     height={100}
-                    onClick={()=> router.push("/")}
+                    onClick={() => router.push("/")}
                   />
                 </div>
-                
+
                 <div className="hidden w-full sm:ml-6 sm:flex sm:items-center sm:justify-center">
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
@@ -75,7 +75,10 @@ export default function Example() {
                   </div>
                 </div>
 
-                <button className=' bg-white hidden sm:block rounded-full w-48 text-base font-medium px-2'>Connect Wallet</button>
+                <button
+                  onClick={() => router.push('https://main-app-six.vercel.app/')}
+                  className=' bg-white hidden sm:block rounded-full w-48 text-base font-medium px-2'>Launch App &gt;
+                </button>
               </div>
             </div>
           </div>
