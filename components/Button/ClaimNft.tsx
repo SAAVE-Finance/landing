@@ -25,12 +25,12 @@ const ClaimNft = () => {
         <button
           disabled={!write || isLoading}
           onClick={write}
-          className="mx-[47%] bg-[#f8f86d] p-3 rounded-xl w-36 hover:scale-105"
+          className="mx-[47%] bg-[#f8f86d] p-3 rounded-xl w-36 hover:scale-105 mt-4"
         >
           {isLoading ? "Minting..." : "Claim NFT"}
         </button>
       )}
-      {!isSuccess && (
+      {isSuccess && (
         <div className="text-[#ffffff9e] mx-[46%] w-48 my-4 text-center text-[20px]">
           Successfully minted your NFT
           <div>

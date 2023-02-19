@@ -3,8 +3,8 @@ import { Player } from '@livepeer/react';
 import Image from "next/image";
  
 const playbackId1 ='fb1euqu18tlbc1yg';
-const playbackId2 ='7f75c0230wztkujw';
-const playbackId3 ='30eeesdlj8xbfjm9';
+const playbackId2 ='4faatllpt4f0wgdb';
+const playbackId3 ='7141xbzqzcj9oib3';
  
 import blenderPoster from "@/public/assets/coins.png";
 import aave from "@/public/assets/aave3.png";

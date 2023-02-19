@@ -50,7 +50,7 @@ export default function Home() {
         <Panel
           img={SwordShield}
           glowimg={Glow3}
-          title={"Defi"}
+          title={"Decentralized Finance"}
           desc={
             "DeFi stands for Decentralized Finance, which refers to a new type of financial system that is built using blockchain technology. Blockchain is a digital ledger that is distributed ....."
           }

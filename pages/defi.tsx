@@ -27,7 +27,7 @@ function docs() {
       <div className="flex flex-col space-y-48 items-center justify-center mt-10 md:mt-24 p-4">
         <div className="text-center space-y-4">
           <h1 className="text-4xl font-Manrope md:text-6xl font-extrabold text-white">
-            DeFi
+          Decentralized Finance
           </h1>
           <div className="flex flex-wrap items-center justify-center p-8 md:p-10 ">
             <p className="text-white text-left w-full md:w-1/2 lg:w-1/3 text-xl p-4">

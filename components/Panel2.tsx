@@ -15,7 +15,7 @@ const Panel = (props: {
         <Image
           src={props.glowimg}
           alt="glow"
-          className="z-[-1] absolute left-[2px] top-[106rem]"
+          className="z-[-1] absolute left-[2px] top-[135rem]"
         />
         <Image src={props.img} alt="hero" />
       </div>
