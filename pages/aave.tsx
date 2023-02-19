@@ -4,6 +4,7 @@ import Hand from "@/public/assets/hand.png";
 import Locker from "@/public/assets/locker.png";
 import Footer from "@/components/Footer/Footer";
 import ClaimNft from "@/components/Button/ClaimNft";
+import BuyNft from "@/components/BuyNFT";
 import Navbar1 from "@/components/Navbar/Navbar1";
 import { CreateAndViewAsset } from "@/components/CreateAndViewAsset";
 
