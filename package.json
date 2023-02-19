@@ -11,6 +11,8 @@
   "dependencies": {
     "@arcana/auth": "^1.0.1",
     "@arcana/auth-wagmi": "^0.0.2",
+    "@headlessui/react": "^1.7.11",
+    "@heroicons/react": "^2.0.16",
     "@livepeer/react": "^2.2.0",
     "@next/font": "13.1.6",
     "@pushprotocol/restapi": "^0.6.1",
@@ -21,6 +23,7 @@
     "eslint": "8.33.0",
     "eslint-config-next": "13.1.6",
     "ethers": "^5.7.2",
+    "heroicons": "^2.0.16",
     "next": "13.1.6",
     "react": "18.2.0",
     "react-dom": "18.2.0",
