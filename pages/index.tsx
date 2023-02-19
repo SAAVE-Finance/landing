@@ -6,7 +6,7 @@ import Footer from "@/components/Footer/Footer";
 import Feature from "@/components/Feature";
 import Panel from "@/components/Panel";
 import Panel2 from "@/components/Panel2";
-import Ghost2 from "@/public/assets/SAAVE.png";
+import Ghost2 from "@/public/assets/saave.png";
 import SwordShield from "@/public/assets/swordshield.png";
 import Ghost1 from "@/public/assets/aaveLend.png";
 import Newsletter from "@/components/Cards/Newsletter";
