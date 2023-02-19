@@ -7,7 +7,11 @@ import Footer from "@/components/Footer/Footer";
 import ClaimNft from "@/components/Button/ClaimNft";
 import BuyNft from "@/components/BuyNFT";
 import Navbar1 from "@/components/Navbar/Navbar1";
-import { CreateAndViewAsset } from "@/components/CreateAndViewAsset";
+import { Video1 } from "@/components/Livepeer";
+import aave1 from "@/public/assets/aave1.png";
+import aave2 from "@/public/assets/aave2.jpg";
+import aave3 from "@/public/assets/aave3.png";
+import aave4 from "@/public/assets/aave4.jpg";
 
 function Docs() {
   const [show, setShow] = React.useState(false);
@@ -32,9 +36,9 @@ function Docs() {
             </p>
             <div className="md:w-96 flex items-center justify-center">
               <Image
-                className=" h-[200px] md:h-[200px] lg:h-[300px] w-auto cursor-pointer"
+                className=" h-[200px] md:h-[200px] lg:h-[300px] w-auto cursor-pointer object-contain"
                 // src={Ghost.src}
-                src={Hand.src}
+                src={aave1.src}
                 // src={Wallet.src}
                 alt="Your Company"
                 width={900}
@@ -51,9 +55,9 @@ function Docs() {
           <div className="flex flex-wrap items-center justify-center p-8 md:p-10 ">
             <div className="md:w-96 flex items-center justify-center">
               <Image
-                className=" h-[200px] md:h-[200px] lg:h-[300px] w-auto cursor-pointer"
+                className=" h-[200px] md:h-[200px] lg:h-[300px] w-auto cursor-pointer  object-contain "
                 // src={Ghost.src}
-                src={Hand.src}
+                src={aave3.src}
                 // src={Wallet.src}
                 alt="Your Company"
                 width={900}
@@ -76,9 +80,9 @@ function Docs() {
             </p>
             <div className="md:w-96 flex items-center justify-center">
               <Image
-                className=" h-[200px] md:h-[200px] lg:h-[300px] w-auto cursor-pointer"
+                className=" h-[200px] md:h-[200px] lg:h-[300px] w-auto cursor-pointer  object-contain"
                 // src={Ghost.src}
-                src={Locker.src}
+                src={aave2.src}
                 // src={Wallet.src}
                 alt="Your Company"
                 width={900}
@@ -95,9 +99,9 @@ function Docs() {
           <div className="flex flex-wrap items-center justify-center p-8 md:p-10 ">
             <div className="md:w-96 flex items-center justify-center">
               <Image
-                className=" h-[200px] md:h-[200px] lg:h-[300px] w-auto cursor-pointer"
+                className=" h-[200px] md:h-[200px] lg:h-[300px] w-auto cursor-pointer  object-contain rounded-[25px]"
                 // src={Ghost.src}
-                src={Locker.src}
+                src={aave4.src}
                 // src={Wallet.src}
                 alt="Your Company"
                 width={900}
@@ -111,10 +115,10 @@ function Docs() {
         </div>
       </div>
       <div
-        className="flex justify-center w-[80%] h-[500px] mx-auto mb-3"
+        className="flex justify-center w-[80%] h-[550px] mx-auto mb-3"
         onClick={onClick}
       >
-        <CreateAndViewAsset />
+        <Video1 />
       </div>
       <ClaimNft />
       <Footer />

@@ -6,8 +6,16 @@ import Locker from "@/public/assets/locker.png";
 import Footer from "@/components/Footer/Footer";
 import ClaimNft from "@/components/Button/ClaimNft";
 import Navbar1 from "@/components/Navbar/Navbar1";
+import curve1 from "@/public/assets/curve1.png";
+import curve2 from "@/public/assets/curve2.png";
+import curve3 from "@/public/assets/curve3.png";
+import curve4 from "@/public/assets/curve4.jpg"
+import { Video3 } from "@/components/Livepeer";
 
 function docs() {
+  const [show, setShow] = React.useState(false);
+  const onClick = () => setShow(!show);
+
   return (
     <>
     <Head>
@@ -27,9 +35,9 @@ function docs() {
             </p>
             <div className="md:w-96 flex items-center justify-center">
               <Image
-                className=" h-[200px] md:h-[200px] lg:h-[300px] w-auto cursor-pointer"
+                className=" h-[200px] md:h-[200px] lg:h-[300px]  object-contain w-auto cursor-pointer"
                 // src={Ghost.src}
-                src={Hand.src}
+                src={curve1.src}
                 // src={Wallet.src}
                 alt="Your Company"
                 width={900}
@@ -46,9 +54,9 @@ function docs() {
           <div className="flex flex-wrap items-center justify-center p-8 md:p-10 ">
             <div className="md:w-96 flex items-center justify-center">
               <Image
-                className=" h-[200px] md:h-[200px] lg:h-[300px] w-auto cursor-pointer"
+                className=" h-[200px] md:h-[200px] lg:h-[300px]  object-contain w-auto cursor-pointer"
                 // src={Ghost.src}
-                src={Hand.src}
+                src={curve2.src}
                 // src={Wallet.src}
                 alt="Your Company"
                 width={900}
@@ -71,9 +79,9 @@ function docs() {
             </p>
             <div className="md:w-96 flex items-center justify-center">
               <Image
-                className=" h-[200px] md:h-[200px] lg:h-[300px] w-auto cursor-pointer"
+                className=" h-[200px] md:h-[200px] lg:h-[300px]  object-contain w-auto cursor-pointer"
                 // src={Ghost.src}
-                src={Locker.src}
+                src={curve3.src}
                 // src={Wallet.src}
                 alt="Your Company"
                 width={900}
@@ -90,9 +98,9 @@ function docs() {
           <div className="flex flex-wrap items-center justify-center p-8 md:p-10 ">
             <div className="md:w-96 flex items-center justify-center">
               <Image
-                className=" h-[200px] md:h-[200px] lg:h-[300px] w-auto cursor-pointer"
+                className=" h-[200px] md:h-[200px] lg:h-[300px]  object-contain w-auto cursor-pointer"
                 // src={Ghost.src}
-                src={Locker.src}
+                src={curve4.src}
                 // src={Wallet.src}
                 alt="Your Company"
                 width={900}
@@ -104,6 +112,12 @@ function docs() {
             </p>
           </div>
         </div>
+      </div>
+      <div
+        className="flex justify-center w-[80%] h-[550px] mx-auto mb-3"
+        onClick={onClick}
+      >
+        <Video3 />
       </div>
       <ClaimNft />
       <Footer />

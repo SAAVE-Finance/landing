@@ -1,14 +1,28 @@
 import React from "react";
+import Head from "next/head";
 import Image from "next/image";
 import Hand from "@/public/assets/hand.png";
 import Locker from "@/public/assets/locker.png";
 import Footer from "@/components/Footer/Footer";
 import ClaimNft from "@/components/Button/ClaimNft";
 import Navbar1 from "@/components/Navbar/Navbar1";
+import defi1 from "@/public/assets/defi1.jpg";
+import defi2 from "@/public/assets/defi2.jpg";
+import defi3 from "@/public/assets/defi3.jpeg";
+import defi4 from "@/public/assets/defi4.jpg";
+import { Video2 } from "@/components/Livepeer";
+
 
 function docs() {
+  const [show, setShow] = React.useState(false);
+  const onClick = () => setShow(!show);
   return (
     <>
+    <Head>
+        <title>DEFI | Saave Finance </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <Navbar1 />
       <div className="flex flex-col space-y-48 items-center justify-center mt-10 md:mt-24 p-4">
         <div className="text-center space-y-4">
@@ -21,9 +35,9 @@ function docs() {
             </p>
             <div className="md:w-96 flex items-center justify-center">
               <Image
-                className=" h-[200px] md:h-[200px] lg:h-[300px] w-auto cursor-pointer"
+                className=" h-[200px] md:h-[200px] lg:h-[300px]  object-contain w-auto cursor-pointer"
                 // src={Ghost.src}
-                src={Hand.src}
+                src={defi1.src}
                 // src={Wallet.src}
                 alt="Your Company"
                 width={900}
@@ -40,9 +54,9 @@ function docs() {
           <div className="flex flex-wrap items-center justify-center p-8 md:p-10 ">
             <div className="md:w-96 flex items-center justify-center">
               <Image
-                className=" h-[200px] md:h-[200px] lg:h-[300px] w-auto cursor-pointer"
+                className=" h-[200px] md:h-[200px] lg:h-[300px]  object-contain w-auto cursor-pointer"
                 // src={Ghost.src}
-                src={Hand.src}
+                src={defi2.src}
                 // src={Wallet.src}
                 alt="Your Company"
                 width={900}
@@ -65,9 +79,9 @@ function docs() {
             </p>
             <div className="md:w-96 flex items-center justify-center">
               <Image
-                className=" h-[200px] md:h-[200px] lg:h-[300px] w-auto cursor-pointer"
+                className=" h-[200px] md:h-[200px] lg:h-[300px]  object-contain w-auto cursor-pointer"
                 // src={Ghost.src}
-                src={Locker.src}
+                src={defi3.src}
                 // src={Wallet.src}
                 alt="Your Company"
                 width={900}
@@ -84,9 +98,9 @@ function docs() {
           <div className="flex flex-wrap items-center justify-center p-8 md:p-10 ">
             <div className="md:w-96 flex items-center justify-center">
               <Image
-                className=" h-[200px] md:h-[200px] lg:h-[300px] w-auto cursor-pointer"
+                className=" h-[200px] md:h-[200px] lg:h-[300px]  object-contain w-auto cursor-pointer"
                 // src={Ghost.src}
-                src={Locker.src}
+                src={defi4.src}
                 // src={Wallet.src}
                 alt="Your Company"
                 width={900}
@@ -98,6 +112,12 @@ function docs() {
             </p>
           </div>
         </div>
+      </div>
+      <div
+        className="flex justify-center w-[80%] h-[550px] mx-auto mb-3"
+        onClick={onClick}
+      >
+        <Video2 />
       </div>
       <ClaimNft />
       <Footer />
