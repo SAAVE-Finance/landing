@@ -79,7 +79,7 @@ export default function Example() {
 
                 <button
                   onClick={() =>
-                    router.push("https://main-bvtkpmsw3-relty.vercel.app/")
+                    router.push("https://main-app-six.vercel.app/")
                   }
                   className=" bg-white hidden sm:block rounded-full w-48 text-base font-medium px-2"
                 >
