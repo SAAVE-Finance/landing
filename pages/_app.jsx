@@ -1,7 +1,7 @@
 import * as React from "react";
 import "@/styles/globals.css";
 import "@rainbow-me/rainbowkit/styles.css";
-import type { AppProps } from "next/app";
+import { AppProps } from "next/app";
 import { jsonRpcProvider } from "wagmi/providers/jsonRpc";
 import { polygon, polygonMumbai } from "wagmi/chains";
 import {
@@ -16,7 +16,7 @@ import { configureChains, createClient, WagmiConfig } from "wagmi";
 import { publicProvider } from "wagmi/providers/public";
 import { RainbowKitProvider } from "@rainbow-me/rainbowkit";
 
-export const ArcanaRainbowConnector = ({ chains } : {chains: any}) => {
+export const ArcanaRainbowConnector = ({ chains }) => {
   return {
     id: "arcana-auth",
     name: "Arcana Wallet",
@@ -36,7 +36,7 @@ export const ArcanaRainbowConnector = ({ chains } : {chains: any}) => {
     },
   };
 };
-const connectors = ({ chains } : {chains: any}) =>
+const connectors = ({ chains }) =>
   connectorsForWallets([
     {
       groupName: "Recommended",
@@ -64,13 +64,13 @@ const wagmiClient = createClient({
 });
 const livepeerClient = createReactClient({
   provider: studioProvider({
-    apiKey: process.env.NEXT_PUBLIC_STUDIO_API_KEY!,
+    apiKey: process.env.NEXT_PUBLIC_STUDIO_API_KEY,
   }),
 });
 
 // const auth = getAuth();
 
-export default function App({ Component, pageProps }: AppProps) {
+export default function App({ Component, pageProps }) {
   return (
     <>
       <WagmiConfig client={wagmiClient}>
