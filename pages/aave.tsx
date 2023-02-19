@@ -3,7 +3,7 @@ import Image from "next/image";
 import Hand from "@/public/assets/hand.png";
 import Locker from "@/public/assets/locker.png";
 import Footer from "@/components/Footer/Footer";
-import BuyNFT from "@/components/BuyNFT";
+import ClaimNft from "@/components/Button/ClaimNft";
 import Navbar1 from "@/components/Navbar/Navbar1";
 import { CreateAndViewAsset } from "@/components/CreateAndViewAsset";
 
@@ -119,7 +119,7 @@ function docs() {
       <div className="flex justify-center w-[80%] h-[500px] mx-auto mb-3">
         <CreateAndViewAsset />
       </div>
-      <BuyNFT />
+      <ClaimNft />
       <Footer />
     </>
   );

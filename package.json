@@ -10,18 +10,22 @@
   },
   "dependencies": {
     "@arcana/auth": "^1.0.1",
+    "@arcana/auth-wagmi": "^0.0.2",
     "@livepeer/react": "^2.2.0",
     "@next/font": "13.1.6",
+    "@rainbow-me/rainbowkit": "^0.11.0",
     "@types/node": "18.13.0",
     "@types/react": "18.0.27",
     "@types/react-dom": "18.0.10",
     "eslint": "8.33.0",
     "eslint-config-next": "13.1.6",
+    "ethers": "^5",
     "next": "13.1.6",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-dropzone": "^14.2.3",
-    "typescript": "4.9.5"
+    "typescript": "4.9.5",
+    "wagmi": "^0.11.5"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
