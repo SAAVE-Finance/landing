@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { Inter } from "@next/font/google";
 import Hero from "@/components/Hero";
+import Hero2 from "@/components/Hero2";
 import Footer from "@/components/Footer/Footer";
 import Feature from "@/components/Feature";
 import Panel from "@/components/Panel";
@@ -26,7 +27,7 @@ export default function Home() {
       </Head>
       <main>
         <Navbar />
-        <Hero />
+        <Hero2 />
         <Feature />
         <Panel
           img={Ghost1}
