@@ -7,7 +7,10 @@ import ClaimNft from "@/components/Button/ClaimNft";
 import Navbar1 from "@/components/Navbar/Navbar1";
 import { CreateAndViewAsset } from "@/components/CreateAndViewAsset";
 
-function docs() {
+function Docs() {
+  const [show, setShow] = React.useState(false);
+  const onClick = () => setShow(!show);
+
   return (
     <>
       <Navbar1 />
@@ -116,7 +119,10 @@ function docs() {
           </div>
         </div>
       </div>
-      <div className="flex justify-center w-[80%] h-[500px] mx-auto mb-3">
+      <div
+        className="flex justify-center w-[80%] h-[500px] mx-auto mb-3"
+        onClick={onClick}
+      >
         <CreateAndViewAsset />
       </div>
       <ClaimNft />
@@ -125,4 +131,4 @@ function docs() {
   );
 }
 
-export default docs;
+export default Docs;
