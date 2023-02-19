@@ -2,6 +2,7 @@ import * as React from "react";
 import "@/styles/globals.css";
 import "@rainbow-me/rainbowkit/styles.css";
 import type { AppProps } from "next/app";
+import { jsonRpcProvider } from "wagmi/providers/jsonRpc";
 import { polygon, polygonMumbai } from "wagmi/chains";
 import {
   LivepeerConfig,
@@ -35,7 +36,6 @@ export const ArcanaRainbowConnector = ({ chains }) => {
     },
   };
 };
-
 const connectors = (chains) =>
   connectorsForWallets([
     {
@@ -46,13 +46,21 @@ const connectors = (chains) =>
 
 const { chains, provider } = configureChains(
   [polygon, polygonMumbai],
-  [publicProvider()]
+  [
+    jsonRpcProvider({
+      rpc: (chains) => ({
+        http: `https://blissful-withered-arm.matic-testnet.discover.quiknode.pro/27f8e7344ca0c32dd52870a3517339941ce42603/`,
+      }),
+    }),
+    publicProvider(),
+  ]
 );
 
 const wagmiClient = createClient({
   autoConnect: true,
   connectors: connectors(chains),
   provider,
+  // provider,
 });
 const livepeerClient = createReactClient({
   provider: studioProvider({
