@@ -1,34 +1,35 @@
 import React from "react";
-import Coin from "@/public/assets/image 5.png";
-import Sheild from "@/public/assets/image 6.png";
+import Ecto from "@/public/assets/ecto.png";
+import Sword from "@/public/assets/swordshield.png";
+import Pestle from "@/public/assets/pestleandmortar.png";
 import Card from "@/components/Cards/Card";
 
 const Feature = () => {
   return (
     <div className="mt-56 ">
-      <h1 className="font-normal text-6xl text-center leading-[64px] font-[inter] text-white my-5 ">
+      <h1 className="font-extrabold font-Poppins text-4xl md:text-6xl text-center leading-[64px] text-white my-5 ">
         What does SAAVE do?
       </h1>
-      <div className="flex flex-row justify-center px-10 mt-20 mb-12">
+      <div className="flex flex-row justify-center flex-wrap px-10 mt-20 mb-12">
         <Card
-          img={Sheild}
-          title={"Security provider"}
+          img={Sword}
+          title={"Battle Tested"}
           description={
-            "With the upcoming Interchain Security featur in exchange for additional staking rewards."
+            "Earn the safest yields from the most battle tested defi protocols"
           }
         />
         <Card
-          img={Coin}
-          title={"Marketplace"}
+          img={Ecto}
+          title={"Easy UI"}
           description={
-            "Set to operate a next-gen decentralized exchange Interchain, with transaction confirmation."
+            "View your profit in real-time"
           }
         />
         <Card
-          img={Sheild}
-          title={"Security provider"}
+          img={Pestle}
+          title={"Simplified"}
           description={
-            "With the upcoming Interchain Security feature in exchange for additional staking rewards."
+            "Combine different strategies into one simple one"
           }
         />
       </div>

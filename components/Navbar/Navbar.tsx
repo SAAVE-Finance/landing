@@ -1,34 +1,116 @@
-import Link from "next/link";
-import React from "react";
-import styles from "../../styles/Navbar.module.css";
-import Logo from "/public/assets/saave.png";
+import { Fragment } from "react";
+import { Disclosure, Menu, Transition } from "@headlessui/react";
+import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
+import Saave from "@/public/assets/SAAVE.png";
 import Image from "next/image";
+import { useRouter } from "next/router";
 
-const Navbar = () => {
+const navigation = [
+  { name: "Dashboard", href: "#", current: true },
+  { name: "Team", href: "#", current: false },
+  { name: "Projects", href: "#", current: false },
+  { name: "Calendar", href: "#", current: false },
+];
+
+function classNames(...classes: string[]) {
+  return classes.filter(Boolean).join(" ");
+  console.log("Class is ", classes);
+}
+
+export default function Example() {
+  const router = useRouter();
   return (
-    <nav className="w-full h-[15vh] flex text-white font-['DM Sans'] justify-between py-5 px-14 mb-2">
-      <div className="flex my-auto">
-        <Link href="/">
-          {/* <Image src={Logo} alt={"nav-logo"} className=" w-14" /> */}
-          <h2 className="text-xl font-bold pb-1  ">SAAVE</h2>
-        </Link>
-      </div>
-      <div className="flex justify-around my-auto ml-16 text-[#ffffffec]">
-        <a className={` ${styles.links} cursor-pointer mx-10`}>Learn</a>
-        <a className={` ${styles.links} cursor-pointer mx-10`}>Build</a>
-        <a className={` ${styles.links} cursor-pointer mx-10`}>Explore</a>
-        <a className={` ${styles.links} cursor-pointer mx-10`}>Reviews</a>
-      </div>
-      <button className="hover:scale-105 bg-white rounded-2xl border-none h-[86%] my-auto">
-        <Link
-          href="https://main-app-six.vercel.app/"
-          className="cursor-pointer  text-black p-4 font-medium"
-        >
-          Launch App &gt;
-        </Link>
-      </button>
-    </nav>
-  );
-};
+    <Disclosure as="nav" className="bg-black">
+      {({ open }) => (
+        <>
+          <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 font-Manrope py-2 mt-2">
+            <div className="relative flex h-16 items-center justify-between">
+              <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
+                {/* Mobile menu button*/}
+                <Disclosure.Button className="mx-6 inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-rounded focus:ring-inset focus:ring-white">
+                  <span className="sr-only">Open main menu</span>
+                  {open ? (
+                    <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
+                  ) : (
+                    <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
+                  )}
+                </Disclosure.Button>
+              </div>
+              <div className="flex flex-1 items-center sm:items-stretch sm:justify-start mx-6`">
+                <div className="flex flex-shrink-0 items-center">
+                  <Image
+                    className="block h-12 w-auto lg:hidden cursor-pointer"
+                    src={Saave.src}
+                    alt="Your Company"
+                    width={200}
+                    height={100}
+                    onClick={() => router.push("/")}
+                  />
+                  <Image
+                    className="hidden h-12 w-auto lg:block cursor-pointer"
+                    src={Saave.src}
+                    alt="Your Company"
+                    width={200}
+                    height={100}
+                    onClick={() => router.push("/")}
+                  />
+                  <div className="text-white text-xl font-extrabold">SAAVE</div>
+                </div>
 
-export default Navbar;
+                <div className="hidden w-full sm:ml-6 sm:flex sm:items-center sm:justify-center">
+                  <div className="flex space-x-4">
+                    {navigation.map((item) => (
+                      <a
+                        key={item.name}
+                        href={item.href}
+                        className={classNames(
+                          item.current
+                            ? "bg-gray-900 text-white"
+                            : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                          "px-3 py-2 rounded-md text-sm font-medium"
+                        )}
+                        aria-current={item.current ? "page" : undefined}
+                      >
+                        {item.name}
+                      </a>
+                    ))}
+                  </div>
+                </div>
+
+                <button
+                  onClick={() =>
+                    router.push("https://main-bvtkpmsw3-relty.vercel.app/")
+                  }
+                  className=" bg-white hidden sm:block rounded-full w-48 text-base font-medium px-2"
+                >
+                  Launch App &gt;
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <Disclosure.Panel className="sm:hidden">
+            <div className="space-y-1 px-2 pt-2 pb-3">
+              {navigation.map((item) => (
+                <Disclosure.Button
+                  key={item.name}
+                  as="a"
+                  href={item.href}
+                  className={classNames(
+                    item.current
+                      ? "bg-gray-900 text-white"
+                      : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                    "block px-3 py-2 rounded-md text-base font-medium"
+                  )}
+                  aria-current={item.current ? "page" : undefined}
+                >
+                  {item.name}
+                </Disclosure.Button>
+              ))}
+            </div>
+          </Disclosure.Panel>
+        </>
+      )}
+    </Disclosure>
+  );
+}

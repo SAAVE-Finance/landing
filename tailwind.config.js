@@ -9,6 +9,7 @@ module.exports = {
     extend: {},
     fontFamily: {
       DM_Sans: ["DM Sans"],
+      Poppins: ['Poppins'],
     },
     backgroundImage: {
       "glow-1": "url('/assets/glow1.png')",

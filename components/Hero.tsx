@@ -20,8 +20,7 @@ const Hero = () => {
           Blockchain
         </h1>
         <p className="font-DM_Sans my-10  mx-auto w-[50%] text-[#ffffffaf] text-center">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-          incidunt quas totam sapiente voluptatem natus cupiditate
+        Welcome to SAAVE FINANCE, designed to provide an easy and simple way for beginners to enter the world of decentralized finance. Our protocol offers a user-friendly interface that allows you to track your profits in real-time, making it easy to manage your investments.
         </p>
       </main>
       <div className="absolute z-1 h-10 bottom-52 -right-20">

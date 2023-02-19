@@ -1,11 +1,12 @@
 import Head from "next/head";
 import { Inter } from "@next/font/google";
 import Hero from "@/components/Hero";
+import Hero2 from "@/components/Hero2";
 import Footer from "@/components/Footer/Footer";
 import Feature from "@/components/Feature";
 import Panel from "@/components/Panel";
 import Panel2 from "@/components/Panel2";
-import Ghost2 from "@/public/assets/SAAVE.png";
+import Ghost2 from "../public/assets/SAAVE.png";
 import SwordShield from "@/public/assets/swordshield.png";
 import Ghost1 from "@/public/assets/aaveLend.png";
 import Newsletter from "@/components/Cards/Newsletter";
@@ -26,32 +27,32 @@ export default function Home() {
       </Head>
       <main>
         <Navbar />
-        <Hero />
+        <Hero2 />
         <Feature />
         <Panel
           img={Ghost1}
           glowimg={Glow1}
-          title={"AAVE lending"}
+          title={"AAVE"}
           desc={
-            "In return for securing the services on the Cronos Hub, transaction fees and staking rewards are distributed to HEDRON stakers. In the Cronos Hub, transaction fees and staking rewards are distributed to HEDRON stakers."
+            "The AAVE protocol is a decentralized finance (DeFi) platform built on top of the Ethereum blockchain. DeFi refers to a new type of financial system that is built on blockchain technology....."
           }
           link={"/aave"}
         />
         <Panel2
           img={Ghost2}
           glowimg={Glow2}
-          title={"Decentralized lending"}
+          title={"Curve Finance"}
           desc={
-            "In return for securing the services on the Cronos Hub, transaction fees and staking rewards are distributed to HEDRON stakers. In the Cronos Hub, transaction fees and staking rewards are distributed to HEDRON stakers."
+            "Curve Finance is a decentralized finance (DeFi) platform that allows users to trade stablecoins and earn fees in the process. Stablecoins are cryptocurrencies that are pegged to the value of a stable asset....."
           }
           link={"/curve"}
         />
         <Panel
           img={SwordShield}
           glowimg={Glow3}
-          title={"Decentralized lending"}
+          title={"Decentralized Finance"}
           desc={
-            "In return for securing the services on the Cronos Hub, transaction fees and staking rewards are distributed to HEDRON stakers. In the Cronos Hub, transaction fees and staking rewards are distributed to HEDRON stakers."
+            "DeFi stands for Decentralized Finance, which refers to a new type of financial system that is built using blockchain technology. Blockchain is a digital ledger that is distributed ....."
           }
           link={"/defi"}
         />

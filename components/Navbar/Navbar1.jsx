@@ -1,30 +1,11 @@
 import Link from "next/link";
 import React from "react";
+import { ConnectButton } from "@rainbow-me/rainbowkit";
 import Logo from "/public/assets/ghostmascot.png";
 import styles from "../../styles/Navbar.module.css";
 import Image from "next/image";
-import { useArcanaAuth } from "../../auth/useArcanaAuth";
 
 const Navbar1 = () => {
-  const { user, connect, isLoggedIn, loading, loginWithSocial, provider } =
-    useArcanaAuth();
-  const onConnectClick = async () => {
-    try {
-      await connect();
-    } catch (e) {
-      console.log(e);
-    }
-  };
-  const onConnect = () => {
-    console.log("connected");
-  };
-  React.useEffect(() => {
-    provider.on("connect", onConnect);
-    return () => {
-      provider.removeListener("connect", onConnect);
-    };
-  }, [provider]);
-
   return (
     <>
       <nav className="w-full h-[15vh] flex text-white font-['DM Sans'] justify-between py-5 px-14 mb-2">
@@ -40,15 +21,9 @@ const Navbar1 = () => {
           <a className={` ${styles.links} cursor-pointer mx-10`}>Explore</a>
           <a className={` ${styles.links} cursor-pointer mx-10`}>Reviews</a>
         </div>
-        {!loading && !isLoggedIn && (
-          <button
-            className="bg-[#ffffff]  text-[#212121] font-medium text-xl rounded-xl my-auto h-[86%] px-3   hover:scale-105"
-            onClick={onConnectClick}
-          >
-            Connect Wallet
-          </button>
-        )}
-        {!loading && isLoggedIn}
+        <div className=" my-auto">
+          <ConnectButton chainStatus="icon" />
+        </div>
       </nav>
     </>
   );
