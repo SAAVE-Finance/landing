@@ -1,5 +1,6 @@
 import * as React from "react";
 import "@/styles/globals.css";
+import dynamic from "next/dynamic";
 import "@rainbow-me/rainbowkit/styles.css";
 import { AppProps } from "next/app";
 import { jsonRpcProvider } from "wagmi/providers/jsonRpc";
@@ -70,7 +71,7 @@ const livepeerClient = createReactClient({
 
 // const auth = getAuth();
 
-export default function App({ Component, pageProps }) {
+function MyApp({ Component, pageProps }) {
   return (
     <>
       <WagmiConfig client={wagmiClient}>
@@ -83,3 +84,6 @@ export default function App({ Component, pageProps }) {
     </>
   );
 }
+export default dynamic(() => Promise.resolve(MyApp), {
+  ssr: false,
+});
