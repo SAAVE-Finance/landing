@@ -12,11 +12,11 @@ const Panel = (props: {
   return (
     <div className="my-36 flex-col flex md:flex-row justify-center items-center w-[90vw] mx-auto">
       <div className="flex flex-col basis-[35%] justify-center items-center mx-auto">
-        <h1 className="text-white font-DM Sans font-bold text-6xl my-5">
+        <h1 className="text-white text-center font-DM Sans font-bold text-6xl my-5">
           {props.title}
         </h1>
         <div
-          className={`md:hidden basis-[50%] bg${props.glowimg} bg-[length:600px_600px] bg-origin-content bg-no-repeat bg-[center_right_2rem]`}
+          className={`md:hidden relative basis-[50%] bg${props.glowimg} bg-[length:600px_600px] bg-origin-content bg-no-repeat bg-[center_right_2rem]`}
         >
           {/* <Image src={props.glowimg} alt="glow" className="z-[-1] absolute" /> */}
           <Image
@@ -36,7 +36,7 @@ const Panel = (props: {
         </Link>
       </div>
       <div
-        className={`hidden md:block basis-[50%] bg${props.glowimg} bg-[length:600px_600px] bg-origin-content bg-no-repeat bg-[center_right_2rem]`}
+        className={`hidden  relative md:block basis-[50%] bg${props.glowimg} bg-[length:600px_600px] bg-origin-content bg-no-repeat bg-[center_right_2rem]`}
       >
         {/* <Image src={props.glowimg} alt="glow" className="z-[-1] absolute" /> */}
         <Image
