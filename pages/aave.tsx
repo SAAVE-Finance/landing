@@ -120,7 +120,7 @@ function Docs() {
       >
         <Video1 />
       </div>
-      <BuyNft />
+      <ClaimNft />
       <Footer />
     </>
   );
