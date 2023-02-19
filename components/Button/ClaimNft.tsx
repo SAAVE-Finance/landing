@@ -30,9 +30,9 @@ const ClaimNft = () => {
           {isLoading ? "Minting..." : "Claim NFT"}
         </button>
       )}
-      {isSuccess && (
-        <div className="text-[#ffffff9e] mx-[50%]">
-          Successfully minted your NFT!
+      {!isSuccess && (
+        <div className="text-[#ffffff9e] mx-[46%] w-48 my-4 text-center">
+          Successfully minted your NFT
           <div>
             <a href={`https://testnets.opensea.io/${address}`}>Verify !</a>
           </div>
