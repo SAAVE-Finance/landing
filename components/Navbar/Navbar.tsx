@@ -1,21 +1,20 @@
-import { Fragment } from 'react'
-import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Fragment } from "react";
+import { Disclosure, Menu, Transition } from "@headlessui/react";
+import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import Saave from "@/public/assets/saave.png";
-import Image from 'next/image'
-import { useRouter } from 'next/router'
-
+import Image from "next/image";
+import { useRouter } from "next/router";
 
 const navigation = [
-  { name: 'Dashboard', href: '#', current: true },
-  { name: 'Team', href: '#', current: false },
-  { name: 'Projects', href: '#', current: false },
-  { name: 'Calendar', href: '#', current: false },
-]
+  { name: "Dashboard", href: "#", current: true },
+  { name: "Team", href: "#", current: false },
+  { name: "Projects", href: "#", current: false },
+  { name: "Calendar", href: "#", current: false },
+];
 
 function classNames(...classes: string[]) {
-  return classes.filter(Boolean).join(' ')
-  console.log("Class is ", classes)
+  return classes.filter(Boolean).join(" ");
+  console.log("Class is ", classes);
 }
 
 export default function Example() {
@@ -65,10 +64,12 @@ export default function Example() {
                         key={item.name}
                         href={item.href}
                         className={classNames(
-                          item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                          'px-3 py-2 rounded-md text-sm font-medium'
+                          item.current
+                            ? "bg-gray-900 text-white"
+                            : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                          "px-3 py-2 rounded-md text-sm font-medium"
                         )}
-                        aria-current={item.current ? 'page' : undefined}
+                        aria-current={item.current ? "page" : undefined}
                       >
                         {item.name}
                       </a>
@@ -77,8 +78,12 @@ export default function Example() {
                 </div>
 
                 <button
-                  onClick={() => router.push('https://main-app-six.vercel.app/')}
-                  className=' bg-white hidden sm:block rounded-full w-48 text-base font-medium px-2'>Launch App &gt;
+                  onClick={() =>
+                    router.push("https://main-bvtkpmsw3-relty.vercel.app/")
+                  }
+                  className=" bg-white hidden sm:block rounded-full w-48 text-base font-medium px-2"
+                >
+                  Launch App &gt;
                 </button>
               </div>
             </div>
@@ -92,10 +97,12 @@ export default function Example() {
                   as="a"
                   href={item.href}
                   className={classNames(
-                    item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                    'block px-3 py-2 rounded-md text-base font-medium'
+                    item.current
+                      ? "bg-gray-900 text-white"
+                      : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                    "block px-3 py-2 rounded-md text-base font-medium"
                   )}
-                  aria-current={item.current ? 'page' : undefined}
+                  aria-current={item.current ? "page" : undefined}
                 >
                   {item.name}
                 </Disclosure.Button>
@@ -105,5 +112,5 @@ export default function Example() {
         </>
       )}
     </Disclosure>
-  )
+  );
 }
